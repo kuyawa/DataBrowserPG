@@ -23,6 +23,7 @@
 		3D4A11DA1E2BAFB70046B8F2 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A11D91E2BAFB70046B8F2 /* Server.swift */; };
 		3D4A11E11E2BC4600046B8F2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A11DF1E2BC4600046B8F2 /* DataManager.swift */; };
 		3D4A11E21E2BC4610046B8F2 /* DataManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A11E01E2BC4600046B8F2 /* DataManager.xib */; };
+		3D82B0061E2E995E00DBE479 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3D82B0051E2E995E00DBE479 /* README.md */; };
 		3DBE4BC21E2DAE5F0079978B /* ServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBE4BC11E2DAE5F0079978B /* ServerController.swift */; };
 		3DBE4BC41E2DB73F0079978B /* Settings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3DBE4BC31E2DB73F0079978B /* Settings.txt */; };
 		3DBE4BC61E2DBA790079978B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBE4BC51E2DBA790079978B /* Settings.swift */; };
@@ -51,6 +52,7 @@
 		3D4A11DF1E2BC4600046B8F2 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		3D4A11E01E2BC4600046B8F2 /* DataManager.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataManager.xib; sourceTree = "<group>"; };
 		3D7C51ED1E2BFCD50044049B /* ToDo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; wrapsLines = 0; };
+		3D82B0051E2E995E00DBE479 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3DBE4BC11E2DAE5F0079978B /* ServerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		3DBE4BC31E2DB73F0079978B /* Settings.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Settings.txt; sourceTree = "<group>"; };
 		3DBE4BC51E2DBA790079978B /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; wrapsLines = 0; };
@@ -72,6 +74,7 @@
 		3D4A11B71E2BA5010046B8F2 = {
 			isa = PBXGroup;
 			children = (
+				3D82B0051E2E995E00DBE479 /* README.md */,
 				3D7C51ED1E2BFCD50044049B /* ToDo.txt */,
 				3D4A11C21E2BA5010046B8F2 /* DataBrowserPG */,
 				3D4A11D21E2BA6440046B8F2 /* Packages */,
@@ -220,6 +223,7 @@
 				3D4A11C41E2BA5010046B8F2 /* AppDelegate.swift in Sources */,
 				3D4A11D81E2BA8100046B8F2 /* Database.swift in Sources */,
 				3D4A11D61E2BA6440046B8F2 /* PostgreSQL.swift in Sources */,
+				3D82B0061E2E995E00DBE479 /* README.md in Sources */,
 				3D125F4F1E2C547D0025D44F /* BrowseController.swift in Sources */,
 				3DCC5FCA1E2D86050037DCAC /* Utils.swift in Sources */,
 			);

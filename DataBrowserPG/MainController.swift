@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class MainController: NSViewController {
+class MainController: NSViewController, NSTextFieldDelegate {
     
     var settings = Settings()
     var server   = Server()
@@ -18,6 +18,8 @@ class MainController: NSViewController {
     var dataManager    : DataManager?
     var dataBrowser    : NSWindow?
     var dataController : NSWindowController?
+    
+    var hidePass = false
     
     
     @IBOutlet weak var serverView : NSTableView!
@@ -29,9 +31,14 @@ class MainController: NSViewController {
     @IBOutlet weak var textUser: NSTextField!
     @IBOutlet weak var textPass: NSTextField!
     @IBOutlet weak var textData: NSTextField!
+    @IBOutlet weak var textSafe: NSSecureTextField!
     
     @IBOutlet weak var warning: NSTextField!
     
+    @IBAction func onTogglePass(_ sender: AnyObject) {
+        togglePass()
+    }
+
     @IBAction func onNewServer(_ sender: AnyObject) {
         serverNew()
     }
@@ -48,12 +55,18 @@ class MainController: NSViewController {
         serverConnect()
     }
 
-    override func viewDidAppear() {
-        super.viewDidAppear()
+    override func viewDidLoad() {
+        super.viewDidLoad()
         start()
     }
 
     func start() {
+        textPass.delegate = self
+        textSafe.delegate = self
+        textPass.target = self
+        textSafe.target = self
+        togglePass()
+        
         setupServerView()
         settings.load()
         server.loadDefault()
@@ -113,6 +126,7 @@ class MainController: NSViewController {
         textPort.stringValue = server.port
         textUser.stringValue = server.user
         textPass.stringValue = server.pass
+        textSafe.stringValue = server.pass
         textData.stringValue = server.data
     }
     
@@ -122,6 +136,7 @@ class MainController: NSViewController {
         textPort.stringValue = port
         textUser.stringValue = user
         textPass.stringValue = pass
+        textSafe.stringValue = pass
         textData.stringValue = data
     }
     
@@ -131,6 +146,7 @@ class MainController: NSViewController {
         textPort.stringValue = ""
         textUser.stringValue = ""
         textPass.stringValue = ""
+        textSafe.stringValue = ""
         textData.stringValue = ""
     }
     
@@ -218,6 +234,32 @@ class MainController: NSViewController {
     func hideMessage() {
         warning.isHidden = true
     }
-
+    
+    func togglePass() {
+        hidePass = !hidePass
+        if hidePass {
+            textPass.isEnabled = false
+            textPass.isHidden  = true
+            textSafe.isHidden  = false
+            textSafe.isEnabled = true
+        } else {
+            textSafe.isEnabled = false
+            textSafe.isHidden  = true
+            textPass.isHidden  = false
+            textPass.isEnabled = true
+        }
+    }
+    
+    // Keep them synchronized
+    override func controlTextDidChange(_ obj: Notification) {
+        if let textField = obj.object as? NSTextField {
+            if textField.identifier == "textPass" {
+                textSafe.stringValue = textField.stringValue
+            } else {
+                textPass.stringValue = textField.stringValue
+            }
+        }
+    }
+    
 }
 

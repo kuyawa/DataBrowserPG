@@ -882,7 +882,7 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nod-yQ-HUL">
+                                        <textField identifier="textPass" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nod-yQ-HUL">
                                             <rect key="frame" x="117" y="121" width="264" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="kit-0C-2om">
@@ -891,6 +891,18 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <secureTextField identifier="textSafe" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h70-jM-Uqo">
+                                            <rect key="frame" x="117" y="121" width="264" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="lM9-0a-3A5">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <allowedInputSourceLocales>
+                                                    <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                                </allowedInputSourceLocales>
+                                            </secureTextFieldCell>
+                                        </secureTextField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZu-Xs-oi2">
                                             <rect key="frame" x="37" y="100" width="70" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -940,6 +952,17 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jkS-L4-Lnf">
+                                            <rect key="frame" x="384" y="122" width="20" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSQuickLookTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="tNG-hD-mvL">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="onTogglePass:" target="XfG-lQ-9wD" id="3Ts-8h-y5R"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                                 <color key="borderColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -991,6 +1014,7 @@
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="buttonShowPass" destination="jkS-L4-Lnf" id="Gev-pK-ubU"/>
                         <outlet property="numServers" destination="fJK-dp-0ND" id="wjT-5O-SGt"/>
                         <outlet property="serverView" destination="THl-Ox-dac" id="8jg-54-Nb4"/>
                         <outlet property="textData" destination="UtH-uU-lbz" id="As8-EY-Ody"/>
@@ -998,6 +1022,7 @@
                         <outlet property="textName" destination="hqf-Kl-GyQ" id="lti-y7-dLx"/>
                         <outlet property="textPass" destination="nod-yQ-HUL" id="aJG-VT-ZJP"/>
                         <outlet property="textPort" destination="u2U-GS-GWP" id="U1q-ho-F6e"/>
+                        <outlet property="textSafe" destination="h70-jM-Uqo" id="tUS-h5-Quu"/>
                         <outlet property="textUser" destination="9Zb-a0-tOk" id="Qbr-ps-Ria"/>
                         <outlet property="warning" destination="if4-vw-VHE" id="r9H-vW-gje"/>
                     </connections>
@@ -1009,6 +1034,7 @@
     </scenes>
     <resources>
         <image name="NSAddTemplate" width="11" height="11"/>
+        <image name="NSQuickLookTemplate" width="19" height="12"/>
         <image name="NSRemoveTemplate" width="11" height="11"/>
         <image name="appicon064" width="64" height="64"/>
     </resources>

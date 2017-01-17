@@ -1,4 +1,22 @@
-# DataBrowserPG
-## A data browser for PostgreSQL databases
+![AppIcon](https://raw.githubusercontent.com/kuyawa/DataBrowserPG/master/Screenshots/AppIcon.png)
 
-In development...
+#DataBrowser for PostgreSQL
+######Developed in Swift 3 and XCode 8 for OSX Sierra
+
+This mac app is a simple browser for PostgreSQL databases to see the content of the tables and nothing else. Right now it does not allow to edit records or schema information. In version 2 we will add more features to make it more functional.
+
+Here are some screenshots of the app:
+
+### Servers
+
+![Screenshot](https://raw.githubusercontent.com/kuyawa/DataBrowserPG/master/Screenshots/Screenshot0.jpg)
+
+### Browser
+
+![Screenshot](https://raw.githubusercontent.com/kuyawa/DataBrowserPG/master/Screenshots/Screenshot1.jpg)
+
+### Schema
+
+![Screenshot](https://raw.githubusercontent.com/kuyawa/DataBrowserPG/master/Screenshots/Screenshot2.jpg)
+
+As always, send your comments and suggestions our way so we can improve it.

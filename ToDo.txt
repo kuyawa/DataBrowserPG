@@ -1,8 +1,12 @@
 TODO:
 
+- finish readme.md
+- add screenshots
 - on server remove
 - password [x] save, do not save in settings or userDefaults
-- password hide chars
+x fix duplicating server info on connect: move to viewOnLoad
+x on textSafe edit change textPass value
+x password hide chars
 
 ----------------------------------------
 
@@ -12,7 +16,6 @@ x on server save
 x save server info, show on server list
 
 2017/01/16
-x fix duplicating server info on connect
 x first time, show default server on server list, show default info on form
 x on server select, show info
 x send main window ref as sender to hide/show from datamanager
