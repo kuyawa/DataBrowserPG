@@ -25,15 +25,15 @@ class MainController: NSViewController, NSTextFieldDelegate {
     @IBOutlet weak var serverView : NSTableView!
     @IBOutlet weak var numServers : NSTextField!
     
-    @IBOutlet weak var textName: NSTextField!
-    @IBOutlet weak var textHost: NSTextField!
-    @IBOutlet weak var textPort: NSTextField!
-    @IBOutlet weak var textUser: NSTextField!
-    @IBOutlet weak var textPass: NSTextField!
-    @IBOutlet weak var textData: NSTextField!
-    @IBOutlet weak var textSafe: NSSecureTextField!
+    @IBOutlet weak var textName : NSTextField!
+    @IBOutlet weak var textHost : NSTextField!
+    @IBOutlet weak var textPort : NSTextField!
+    @IBOutlet weak var textUser : NSTextField!
+    @IBOutlet weak var textPass : NSTextField!
+    @IBOutlet weak var textData : NSTextField!
+    @IBOutlet weak var textSafe : NSSecureTextField!
     
-    @IBOutlet weak var warning: NSTextField!
+    @IBOutlet weak var warning : NSTextField!
     
     @IBAction func onTogglePass(_ sender: AnyObject) {
         togglePass()

@@ -1014,7 +1014,6 @@
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="buttonShowPass" destination="jkS-L4-Lnf" id="Gev-pK-ubU"/>
                         <outlet property="numServers" destination="fJK-dp-0ND" id="wjT-5O-SGt"/>
                         <outlet property="serverView" destination="THl-Ox-dac" id="8jg-54-Nb4"/>
                         <outlet property="textData" destination="UtH-uU-lbz" id="As8-EY-Ody"/>
