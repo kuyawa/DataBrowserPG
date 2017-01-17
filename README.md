@@ -7,9 +7,10 @@ This mac app is a simple browser for PostgreSQL databases to see the content of 
 
 Here are some screenshots of the app:
 
-\* (Currently you can not connect to remote servers)
 
 ### Servers
+
+\* (Currently you can not connect to remote servers, only local)
 
 ![Screenshot](https://raw.githubusercontent.com/kuyawa/DataBrowserPG/master/Screenshots/Screenshot1.jpg)
 
