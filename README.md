@@ -9,14 +9,14 @@ Here are some screenshots of the app:
 
 ### Servers
 
-![Screenshot](https://raw.githubusercontent.com/kuyawa/DataBrowserPG/master/Screenshots/Screenshot0.jpg)
+![Screenshot](https://raw.githubusercontent.com/kuyawa/DataBrowserPG/master/Screenshots/Screenshot1.jpg)
 
 ### Browser
 
-![Screenshot](https://raw.githubusercontent.com/kuyawa/DataBrowserPG/master/Screenshots/Screenshot1.jpg)
+![Screenshot](https://raw.githubusercontent.com/kuyawa/DataBrowserPG/master/Screenshots/Screenshot2.jpg)
 
 ### Schema
 
-![Screenshot](https://raw.githubusercontent.com/kuyawa/DataBrowserPG/master/Screenshots/Screenshot2.jpg)
+![Screenshot](https://raw.githubusercontent.com/kuyawa/DataBrowserPG/master/Screenshots/Screenshot3.jpg)
 
 As always, send your comments and suggestions our way so we can improve it.
