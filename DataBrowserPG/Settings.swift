@@ -70,7 +70,7 @@ class Settings {
                         let data = info["data"] as? String,
                         let url  = info["url"]  as? String
                     else {
-                        print("No data \(type(of:info))")
+                        print("No server data")
                         break
                     }
                     
@@ -84,14 +84,12 @@ class Settings {
                     
                     self.servers.append(server)
                 } else {
-                    print("No item \(type(of:item))")
+                    print("No server item")
                 }
             }
         } else {
             print("No servers")
         }
-        
-        print("-")
     }
     
     func save() {
@@ -131,7 +129,7 @@ class Settings {
         var index = 0
         for item in servers {
             if item.name.lowercased() == name.lowercased() {
-                print("Server found at #\(index)")
+                //print("Server found at #\(index)")
                 return index
             }
             index += 1

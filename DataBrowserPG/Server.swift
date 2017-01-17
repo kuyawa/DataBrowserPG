@@ -57,21 +57,21 @@ class Server {
     
     // Model
     func saveDefault() {
-        print("Save defaults: ", info)
+        //print("Save defaults: ", info)
         if info.isEmpty { return }
         if name.isEmpty { name = "Default" }
         let defaults = UserDefaults.standard
         defaults.set(name, forKey: "name")
         defaults.set(info, forKey: "info")
         defaults.synchronize()
-        print("Synchronized")
+        //print("Synchronized")
     }
     
     func loadDefault() {
         let defaults = UserDefaults.standard
         name = defaults.string(forKey: "name") ?? "Default"
         info = defaults.string(forKey: "info") ?? ""
-        print("Load defaults: ", info)
+        //print("Load defaults: ", info)
         if info.isEmpty {
             info = "host=localhost port=5432 user=postgres password= dbname=postgres"
             saveDefault()

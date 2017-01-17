@@ -61,6 +61,8 @@ class MainController: NSViewController, NSTextFieldDelegate {
     }
 
     func start() {
+        print("Hello!")
+        
         textPass.delegate = self
         textSafe.delegate = self
         textPass.target = self
