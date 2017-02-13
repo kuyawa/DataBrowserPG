@@ -23,3 +23,9 @@ Here are some screenshots of the app:
 ![Screenshot](https://raw.githubusercontent.com/kuyawa/DataBrowserPG/master/Screenshots/Screenshot3.jpg)
 
 As always, send your comments and suggestions our way so we can improve it.
+
+### Available
+
+If you like what you see, [hire me!](mailto:haxapp@gmail.com)
+
+Or collaborate via [Patreon](https://www.patreon.com/kuyawa) so I can develop more projects you like!

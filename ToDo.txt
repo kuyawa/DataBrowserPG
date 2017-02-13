@@ -1,16 +1,17 @@
 TODO:
 
-- finish readme.md
-- add screenshots
+- update server count
 - on server remove
-- password [x] save, do not save in settings or userDefaults
-x fix duplicating server info on connect: move to viewOnLoad
-x on textSafe edit change textPass value
-x password hide chars
+? password [x] save, do not save in settings or userDefaults
 
 ----------------------------------------
 
 2017/01/17
+x finish readme.md
+x add screenshots
+x fix duplicating server info on connect: move to viewOnLoad
+x on textSafe edit change textPass value
+x password hide chars
 x on server new
 x on server save
 x save server info, show on server list
@@ -32,3 +33,6 @@ x load/save default server
 x create server on DM with info received in connect()
 x create server on url, info or fields
 x design server window
+
+
+End
